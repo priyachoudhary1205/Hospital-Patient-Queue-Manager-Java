@@ -1,49 +1,21 @@
-Hospital Patient Queue Manager 🏥
+# Hospital Patient Queue Manager (Java GUI & SQLite) 🏥🖥️
 
-A desktop-based Hospital Patient Queue Management System developed using Java Swing and SQLite. This application allows hospitals or clinics to manage patient admissions efficiently with persistent database storage and a modern graphical interface.
+A robust, graphical desktop application built with Java Swing that manages hospital patient queues. It integrates with a serverless SQLite database to ensure persistent storage of patient records, completely eliminating the need for complex database installations.
 
-🚀 Features
+## 🚀 Features
+* **Graphical User Interface:** Clean, intuitive desktop window built with Java Swing.
+* **Zero-Setup Database:** Utilizes SQLite to automatically generate and manage a local database file (`hospital.db`).
+* **Real-time Data:** View all waiting patients in a dynamic `JTable` that pulls live from the database.
+* **Auto-generated IDs:** Secure, sequential ID generation handled directly by the SQLite engine.
 
-- Add and manage patient records
-- Real-time patient queue display
-- Persistent SQLite database storage
-- Auto-generated Patient IDs
-- Clean Java Swing GUI
-- Lightweight and easy to run
+## 🛠️ Technologies & Tools
+* **Frontend:** Java (Swing, AWT)
+* **Backend:** Java (JDK 8+)
+* **Database:** SQLite
+* **Connectivity:** Java Database Connectivity (JDBC) / `sqlite-jdbc.jar`
 
-🛠 Technologies Used
-
-- Java (Swing & AWT)
-- SQLite Database
-- JDBC (sqlite-jdbc.jar)
-
-📂 Project Structure
-
-- "DatabaseHelper.java" → Handles database creation and connection
-- "HospitalGUI.java" → Main graphical user interface
-- "hospital.db" → Auto-generated SQLite database
-
-▶️ How to Run
-
-1. Add "sqlite-jdbc.jar" to your project libraries.
-2. Compile the project:
-
-javac DatabaseHelper.java HospitalGUI.java
-
-3. Run the application:
-
-java HospitalGUI
-
-The database file ("hospital.db") will be created automatically.
-
-📸 Screenshots
-
-Add screenshots of:
-
-- Application GUI
-- Database records
-- Source code preview
-
-👨‍💻 Author
-
-Developed using Java Swing and SQLite for learning desktop application development and database integration.
+## ⚙️ How to Run
+1. Clone this repository.
+2. Ensure you have the SQLite JDBC driver (`sqlite-jdbc.jar`) in your project's build path/library.
+3. Compile and run `HospitalGUI.java`.
+4. The application will automatically create the `hospital.db` database file the first time it boots up!
